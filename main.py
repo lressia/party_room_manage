@@ -12,7 +12,7 @@ def carga_vector():
             linea = m.readline()
             linea = linea.split(',')
             # print(linea)
-            aux = Reserva(linea[0], linea[1], linea[2], str(linea[3]), linea[4], linea[5])
+            aux = Reserva(str(linea[0]), str(linea[1]), int(linea[2]), int(linea[3]), int(linea[4]), float(linea[5]))
             register.append(aux)
         else:
             m.close()
