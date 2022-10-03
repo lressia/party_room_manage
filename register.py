@@ -11,7 +11,7 @@ class Reserva:
 def to_string(self, n=False):
     re = ['salón', 'salón y animación', 'salón, animación y comida niños', 'salón, animación, comida niños y sorpresitas']
     if n:
-        print(f'Numero de reserva: {self.id}| Nombre del cumpleañero: {self.nombre}| Edad: {self.edad}| Tipo de servicio: {re[int(self.tipo)]} |'
+        print(f'Numero de reserva: {self.id}| Nombre del cumpleañero: {self.nombre}| Edad: {self.edad}| Tipo de servicio: {re[self.tipo]} |'
           f' Cantidad de invitados: {self.cant_invitados}| Monto: {self.monto}')
     else:
         print(f'Numero de reserva: {self.id}| Nombre del cumpleañero: {self.nombre}| Edad: {self.edad}| Tipo de servicio: XXX |'
